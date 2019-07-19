@@ -3,9 +3,9 @@ package com.mxl.sparkmall.offline
 import com.mxl.sparkmall.offline.rdd.RDDUtil
 import org.apache.spark.sql.SparkSession
 import org.junit
-import org.junit.{After, Assert, Before}
+import org.junit.{After, Before}
 
-class Test extends Assert {
+class Test{
 
   var spark: SparkSession = _
 
@@ -14,7 +14,7 @@ class Test extends Assert {
     spark = SparkSession
       .builder()
       .master("local[1]")
-      .appName("JunitTest")
+      .appName("JunitTest2")
       .enableHiveSupport()
       .config("spark.sql.warehouse.dir", "hdfs://hadoop101:9000/user/hive/warehouse/sparkmall")
       .getOrCreate()
