@@ -1,5 +1,6 @@
 package com.mxl.sparkmall.offline
 
+import com.mxl.sparkmall.offline.rdd.RDDUtil
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession
 
@@ -8,13 +9,13 @@ object OfflineApp {
     val spark = SparkSession
       .builder()
       .master("local[1]")
-      .appName("JunitTest")
+      .appName("OfflineApp")
       .enableHiveSupport()
       .config("spark.sql.warehouse.dir", "hdfs://hadoop101:9000/user/hive/warehouse/sparkmall")
       .getOrCreate()
     val sc: SparkContext = spark.sparkContext
 
-    spark.sql("")
+    //RDDUtil.userVisitActionRdd(spark).collect()
 
   }
 }
