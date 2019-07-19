@@ -59,6 +59,7 @@ object RandomUtil {
   def getRandomDate = {
     // 上次 action 的时间
     var lastDateTIme: Long = 0
+    System.currentTimeMillis()
     // 每次最大的步长时间r
     var maxStepTime: Long = 0
     // 这次操作的相比上次的步长

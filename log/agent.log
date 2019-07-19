@@ -1,0 +1,6 @@
+2019-07-18 15:58:48,317   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-18 15:59:32,033   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-18 16:00:08,305   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-18 16:35:14,382   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-18 16:36:10,958   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-18 16:36:58,967   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
