@@ -125,7 +125,7 @@ object GenMockDataApp {
     // 根据 session 来创建对应 action
     for (i <- 1 to sessionNum) {
       val userId = RandomUtil.randomInt(1, userNum)
-      val sessionId = UUID.randomUUID().toString
+      val sessionId = UUID.randomUUID().toString.replaceAll("-","")
       var isQuit = false
       while (!isQuit) {
         val action = actionOpts.getRandomOption()

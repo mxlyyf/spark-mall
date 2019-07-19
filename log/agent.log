@@ -5258,3 +5258,5 @@ where v.user_id=u.user_id and 1=1
 2019-07-19 15:13:11,139   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
 2019-07-19 15:13:49,157   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
 2019-07-19 15:14:18,281   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 18:33:00,237   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 18:33:18,560   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException

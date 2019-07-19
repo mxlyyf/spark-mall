@@ -54,5 +54,12 @@ class Test{
     println(map.size)
     map.foreach(println)
   }
+
+  @junit.Test
+  def test04: Unit ={
+    var list: List[String] = List("a","b","c","d")
+
+    println(list.contains("b"))
+  }
 }
 

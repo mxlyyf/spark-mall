@@ -10,7 +10,7 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 
 object CategoryTop10 {
-  def staticsTop10Categorys(spark: SparkSession, userVisitActionRDD: RDD[UserVisitAction],taskId: String): Unit = {
+  def staticsTop10Categorys(spark: SparkSession, userVisitActionRDD: RDD[UserVisitAction],taskId: String)  = {
     val acc: StaticsAccu1 = new StaticsAccu1
     spark.sparkContext.register(acc) //注册累加器
 
@@ -36,5 +36,7 @@ object CategoryTop10 {
     })
     JDBCUtil.executeUpdate("truncate category_top10", null)
     JDBCUtil.executeBatchUpdate(sql,args)
+
+    top10Categorys
   }
 }
