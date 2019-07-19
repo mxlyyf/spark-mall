@@ -61,5 +61,34 @@ class Test{
 
     println(list.contains("b"))
   }
+
+  @junit.Test
+  def test05: Unit ={
+    spark.sql("use sparkmall")
+
+    val sql = """select
+                | t3.area,
+                | t4.product_name,
+                | t3.click_count,
+                | t3.rk
+                |from
+                |(
+                |select
+                |	t2.area,
+                |	t2.click_product_id,
+                |	t2.click_count,
+                |	dense_rank() over( partition by t2.area order by t2.click_count desc) rk
+                |from
+                |	(
+                |		select t1.area,t.click_product_id,count(t.click_product_id) click_count
+                |			from user_visit_action t,city_info t1
+                |			where t.click_product_id > -1 and t.city_id=t1.city_id
+                |			group by t1.area,t.click_product_id
+                |	) t2 ) t3,
+                |	product_info t4
+                |	where t4.product_id = t3.click_product_id and rk <= 3""".stripMargin
+    spark.sql(sql).show(30)
+
+  }
 }
 
