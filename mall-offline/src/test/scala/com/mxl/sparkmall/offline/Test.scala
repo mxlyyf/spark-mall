@@ -1,8 +1,9 @@
-import org.apache.spark.sql.{DataFrame, SparkSession}
+package com.mxl.sparkmall.offline
+
+import com.mxl.sparkmall.offline.rdd.RDDUtil
+import org.apache.spark.sql.SparkSession
 import org.junit
-import org.junit._
-import com.mxl.sparkmall.common._
-import com.mxl.sparkmall.common.util.RandomUtil
+import org.junit.{After, Assert, Before}
 
 class Test extends Assert {
 
@@ -34,10 +35,7 @@ class Test extends Assert {
 
   @junit.Test
   def test02: Unit = {
-    println(RandomUtil.getRandomDate("2019-07-10", "2019-07-18"))
-    println(RandomUtil.getRandomDate("2019-07-10", "2019-07-18"))
-    println(RandomUtil.getRandomDate("2019-07-10", "2019-07-18"))
-    println(RandomUtil.getRandomDate("2019-07-10", "2019-07-18"))
+    RDDUtil.userVisitActionRdd(spark).collect()
   }
 }
 

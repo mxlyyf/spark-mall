@@ -117,9 +117,9 @@ object GenMockDataApp {
     val dateFormatter = new SimpleDateFormat("yyyy-MM-dd")
     val timeFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
     // 开始日期
-    val fromDate = dateFormatter.parse("2019-07-17")
+    val startDate = "2019-07-17"
     // 结束日期
-    val toDate = dateFormatter.parse("2019-07-20")
+    val endDate = "2019-07-20"
 
     val rows = ListBuffer[UserVisitAction]()
     // 根据 session 来创建对应 action
@@ -132,7 +132,7 @@ object GenMockDataApp {
         if (action == "quit") {
           isQuit = true
         } else {
-          val date = RandomUtil.getRandomDate
+          val date = RandomUtil.getRandomDate(startDate, endDate)
           val actionDateString = dateFormatter.format(date) //
           val actionTimeString = timeFormatter.format(date)
 
@@ -188,7 +188,7 @@ object GenMockDataApp {
     * @return
     */
   def insertIntoHive(spark: SparkSession, tableName: String, df: DataFrame) = {
-    val database = Constans.HIVE_DATABASE
+    val database = HIVE_DATABASE
     spark.sql(s"use $database") // 切换数据库
     spark.sql(s"drop table if exists $tableName") // 如果表已经存在, 则删除该表
     df.write.saveAsTable(tableName) // 保存数据

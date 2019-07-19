@@ -1,5 +1,6 @@
 package com.mxl.sparkmall.common.util
 
+import java.text.SimpleDateFormat
 import java.util.{Date, Random}
 
 import scala.collection.mutable
@@ -53,19 +54,19 @@ object RandomUtil {
   }
 
   /**
-    * 得到一个随机时间
+    * 得到指定日期区间内的一个随机时间
+    *
     * @return
     */
-  def getRandomDate = {
-    // 上次 action 的时间
-    var lastDateTIme: Long = 0
-    System.currentTimeMillis()
-    // 每次最大的步长时间r
-    var maxStepTime: Long = 0
-    // 这次操作的相比上次的步长
-    val timeStep: Long = randomLong(0, maxStepTime)
-    lastDateTIme += timeStep
-    new Date(lastDateTIme)
+  def getRandomDate(startDate: String, endDate: String) = {
+    val dateFormatter = new SimpleDateFormat("yyyy-MM-dd")
+
+    val startTime: Long = dateFormatter.parse(startDate).getTime
+    val endTime: Long = dateFormatter.parse(endDate).getTime
+
+    val randomTime: Long = startTime + ((endTime - startTime) * Math.random()).toLong
+
+    new Date(randomTime)
   }
 
 }

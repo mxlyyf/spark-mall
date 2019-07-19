@@ -15,9 +15,3 @@ case class UserInfo(user_id: Long,
                     age: Int,
                     professional: String,
                     gender: String)
-
-object UserInfo{
-  def main(args: Array[String]): Unit = {
-    print("Hello")
-  }
-}
