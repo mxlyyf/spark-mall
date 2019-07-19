@@ -4,8 +4,13 @@ import com.mxl.sparkmall.offline.rdd.RDDUtil
 import org.apache.spark.sql.SparkSession
 import org.junit
 import org.junit.{After, Before}
+import org.slf4j.{Logger, LoggerFactory}
+
+import scala.collection.immutable.HashMap
+import scala.collection.mutable
 
 class Test{
+  val logger:Logger = LoggerFactory.getLogger(classOf[Test])
 
   var spark: SparkSession = _
 
@@ -35,7 +40,19 @@ class Test{
 
   @junit.Test
   def test02: Unit = {
-    RDDUtil.userVisitActionRdd(spark).collect()
+    RDDUtil.userVisitActionRdd(spark).foreach(println)
+  }
+
+  @junit.Test
+  def test03: Unit ={
+    var map: Map[String, (Long, Long, Long)] = new HashMap[String, (Long, Long, Long)]
+
+    map += "1" -> (1,1,1)
+    map += "2" -> (2,2,2)
+
+    map += "1" -> (2,3,1)
+    println(map.size)
+    map.foreach(println)
   }
 }
 

@@ -4958,3 +4958,303 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	... 129 more
 2019-07-19 10:31:20,343   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
 2019-07-19 10:45:46,464   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 12:47:22,182   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 12:52:00,681   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 12:53:23,058   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 12:55:22,538   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 12:58:19,424   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:00:16,475   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:06:16,695   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:14:54,429   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:47:11,501   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:48:43,506   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:50:09,007   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:50:46,361   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:55:13,690   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:57:27,420   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 13:59:09,480   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 14:10:38,515   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 14:17:13,117   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 14:17:47,418   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 14:18:15,441   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 14:19:10,206   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 14:19:51,509   INFO --- [main]  org.apache.spark.SparkContext(line:54)  :  Running Spark version 2.1.1
+2019-07-19 14:19:52,469   INFO --- [main]  org.apache.spark.SecurityManager(line:54)  :  Changing view acls to: Administrator,root
+2019-07-19 14:19:52,470   INFO --- [main]  org.apache.spark.SecurityManager(line:54)  :  Changing modify acls to: Administrator,root
+2019-07-19 14:19:52,471   INFO --- [main]  org.apache.spark.SecurityManager(line:54)  :  Changing view acls groups to: 
+2019-07-19 14:19:52,472   INFO --- [main]  org.apache.spark.SecurityManager(line:54)  :  Changing modify acls groups to: 
+2019-07-19 14:19:52,473   INFO --- [main]  org.apache.spark.SecurityManager(line:54)  :  SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator, root); groups with view permissions: Set(); users  with modify permissions: Set(Administrator, root); groups with modify permissions: Set()
+2019-07-19 14:19:52,965   INFO --- [main]  org.apache.spark.util.Utils(line:54)  :  Successfully started service 'sparkDriver' on port 59688.
+2019-07-19 14:19:52,986   INFO --- [main]  org.apache.spark.SparkEnv(line:54)  :  Registering MapOutputTracker
+2019-07-19 14:19:53,005   INFO --- [main]  org.apache.spark.SparkEnv(line:54)  :  Registering BlockManagerMaster
+2019-07-19 14:19:53,009   INFO --- [main]  org.apache.spark.storage.BlockManagerMasterEndpoint(line:54)  :  Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2019-07-19 14:19:53,009   INFO --- [main]  org.apache.spark.storage.BlockManagerMasterEndpoint(line:54)  :  BlockManagerMasterEndpoint up
+2019-07-19 14:19:53,021   INFO --- [main]  org.apache.spark.storage.DiskBlockManager(line:54)  :  Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-b822f302-ebda-47b5-8f00-5f1969d33b65
+2019-07-19 14:19:53,045   INFO --- [main]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  MemoryStore started with capacity 836.7 MB
+2019-07-19 14:19:53,089   INFO --- [main]  org.apache.spark.SparkEnv(line:54)  :  Registering OutputCommitCoordinator
+2019-07-19 14:19:53,193   INFO --- [main]  org.spark_project.jetty.util.log(line:186)  :  Logging initialized @3651ms
+2019-07-19 14:19:53,301   INFO --- [main]  org.spark_project.jetty.server.Server(line:327)  :  jetty-9.2.z-SNAPSHOT
+2019-07-19 14:19:53,318   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@28d6290{/jobs,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,319   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@6ca0256d{/jobs/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,320   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@5ef0d29e{/jobs/job,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,320   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@38f57b3d{/jobs/job/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,321   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@51850751{/stages,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,321   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@3ce3db41{/stages/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,322   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@64df9a61{/stages/stage,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,322   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@77602954{/stages/stage/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,323   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@e260766{/stages/pool,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,324   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@2c3dec30{/stages/pool/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,324   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@34a97744{/storage,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,325   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@4275c20c{/storage/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,325   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@7c56e013{/storage/rdd,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,326   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@3fc9dfc5{/storage/rdd/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,327   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@40258c2f{/environment,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,327   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@2cac4385{/environment/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,328   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@6731787b{/executors,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,329   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@16f7b4af{/executors/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,329   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@7adf16aa{/executors/threadDump,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,330   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@34a1d21f{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,337   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@58bf8650{/static,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,337   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@73c60324{/,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,338   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@71ae31b0{/api,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,339   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@4ba534b0{/jobs/job/kill,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,339   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@6f0ca692{/stages/stage/kill,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,346   INFO --- [main]  org.spark_project.jetty.server.ServerConnector(line:266)  :  Started Spark@4052274f{HTTP/1.1}{0.0.0.0:4040}
+2019-07-19 14:19:53,347   INFO --- [main]  org.spark_project.jetty.server.Server(line:379)  :  Started @3807ms
+2019-07-19 14:19:53,348   INFO --- [main]  org.apache.spark.util.Utils(line:54)  :  Successfully started service 'SparkUI' on port 4040.
+2019-07-19 14:19:53,352   INFO --- [main]  org.apache.spark.ui.SparkUI(line:54)  :  Bound SparkUI to 0.0.0.0, and started at http://192.168.2.138:4040
+2019-07-19 14:19:53,467   INFO --- [main]  org.apache.spark.executor.Executor(line:54)  :  Starting executor ID driver on host localhost
+2019-07-19 14:19:53,531   INFO --- [main]  org.apache.spark.util.Utils(line:54)  :  Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59697.
+2019-07-19 14:19:53,532   INFO --- [main]  org.apache.spark.network.netty.NettyBlockTransferService(line:54)  :  Server created on 192.168.2.138:59697
+2019-07-19 14:19:53,535   INFO --- [main]  org.apache.spark.storage.BlockManager(line:54)  :  Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2019-07-19 14:19:53,539   INFO --- [main]  org.apache.spark.storage.BlockManagerMaster(line:54)  :  Registering BlockManager BlockManagerId(driver, 192.168.2.138, 59697, None)
+2019-07-19 14:19:53,543   INFO --- [dispatcher-event-loop-2]  org.apache.spark.storage.BlockManagerMasterEndpoint(line:54)  :  Registering block manager 192.168.2.138:59697 with 836.7 MB RAM, BlockManagerId(driver, 192.168.2.138, 59697, None)
+2019-07-19 14:19:53,549   INFO --- [main]  org.apache.spark.storage.BlockManagerMaster(line:54)  :  Registered BlockManager BlockManagerId(driver, 192.168.2.138, 59697, None)
+2019-07-19 14:19:53,551   INFO --- [main]  org.apache.spark.storage.BlockManager(line:54)  :  Initialized BlockManager: BlockManagerId(driver, 192.168.2.138, 59697, None)
+2019-07-19 14:19:53,822   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@54a3ab8f{/metrics/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,886   INFO --- [main]  org.apache.spark.sql.internal.SharedState(line:54)  :  Warehouse path is 'hdfs://hadoop101:9000/user/hive/warehouse/sparkmall'.
+2019-07-19 14:19:53,894   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@7ee55e70{/SQL,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,896   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@7668d560{/SQL/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,897   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@530a8454{/SQL/execution,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,898   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@5215cd9a{/SQL/execution/json,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,900   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:744)  :  Started o.s.j.s.ServletContextHandler@aa5455e{/static/sql,null,AVAILABLE,@Spark}
+2019-07-19 14:19:53,994   INFO --- [main]  org.apache.spark.sql.hive.HiveUtils(line:54)  :  Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+2019-07-19 14:19:54,210   INFO --- [main]  org.apache.hadoop.conf.Configuration.deprecation(line:840)  :  mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+2019-07-19 14:19:54,211   INFO --- [main]  org.apache.hadoop.conf.Configuration.deprecation(line:840)  :  mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+2019-07-19 14:19:54,212   INFO --- [main]  org.apache.hadoop.conf.Configuration.deprecation(line:840)  :  mapred.committer.job.setup.cleanup.needed is deprecated. Instead, use mapreduce.job.committer.setup.cleanup.needed
+2019-07-19 14:19:54,213   INFO --- [main]  org.apache.hadoop.conf.Configuration.deprecation(line:840)  :  mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+2019-07-19 14:19:54,213   INFO --- [main]  org.apache.hadoop.conf.Configuration.deprecation(line:840)  :  mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+2019-07-19 14:19:54,214   INFO --- [main]  org.apache.hadoop.conf.Configuration.deprecation(line:840)  :  mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+2019-07-19 14:19:54,214   INFO --- [main]  org.apache.hadoop.conf.Configuration.deprecation(line:840)  :  mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2019-07-19 14:19:54,215   INFO --- [main]  org.apache.hadoop.conf.Configuration.deprecation(line:840)  :  mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+2019-07-19 14:19:54,522   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:589)  :  0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+2019-07-19 14:19:54,561   INFO --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:289)  :  ObjectStore, initialize called
+2019-07-19 14:19:54,746   INFO --- [main]  DataNucleus.Persistence(line:77)  :  Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+2019-07-19 14:19:54,746   INFO --- [main]  DataNucleus.Persistence(line:77)  :  Property datanucleus.cache.level2 unknown - will be ignored
+2019-07-19 14:19:55,994   INFO --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:370)  :  Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+2019-07-19 14:19:57,051   INFO --- [main]  DataNucleus.Datastore(line:77)  :  The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2019-07-19 14:19:57,052   INFO --- [main]  DataNucleus.Datastore(line:77)  :  The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2019-07-19 14:19:57,302   INFO --- [main]  DataNucleus.Datastore(line:77)  :  The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2019-07-19 14:19:57,302   INFO --- [main]  DataNucleus.Datastore(line:77)  :  The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2019-07-19 14:19:57,405   INFO --- [main]  DataNucleus.Query(line:77)  :  Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+2019-07-19 14:19:57,409   INFO --- [main]  org.apache.hadoop.hive.metastore.MetaStoreDirectSql(line:139)  :  Using direct SQL, underlying DB is MYSQL
+2019-07-19 14:19:57,413   INFO --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:272)  :  Initialized ObjectStore
+2019-07-19 14:19:57,724   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:663)  :  Added admin role in metastore
+2019-07-19 14:19:57,731   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:672)  :  Added public role in metastore
+2019-07-19 14:19:57,789   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:712)  :  No user is added in admin role, since config is empty
+2019-07-19 14:19:57,896   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_all_databases
+2019-07-19 14:19:57,899   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_all_databases	
+2019-07-19 14:19:57,915   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_functions: db=default pat=*
+2019-07-19 14:19:57,916   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+2019-07-19 14:19:57,917   INFO --- [main]  DataNucleus.Datastore(line:77)  :  The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+2019-07-19 14:19:57,986   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_functions: db=gmall pat=*
+2019-07-19 14:19:57,987   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_functions: db=gmall pat=*	
+2019-07-19 14:19:57,991   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_functions: db=sparkmall pat=*
+2019-07-19 14:19:57,992   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_functions: db=sparkmall pat=*	
+2019-07-19 14:19:58,124   INFO --- [main]  org.apache.hadoop.hive.ql.session.SessionState(line:641)  :  Created local directory: C:/Users/ADMINI~1/AppData/Local/Temp/94477ea0-2e3b-4484-ab8a-3e3a4c50baba_resources
+2019-07-19 14:19:58,126   INFO --- [main]  org.apache.hadoop.hive.ql.session.SessionState(line:641)  :  Created HDFS directory: /tmp/hive/root/94477ea0-2e3b-4484-ab8a-3e3a4c50baba
+2019-07-19 14:19:58,128   INFO --- [main]  org.apache.hadoop.hive.ql.session.SessionState(line:641)  :  Created local directory: C:/Users/ADMINI~1/AppData/Local/Temp/Administrator/94477ea0-2e3b-4484-ab8a-3e3a4c50baba
+2019-07-19 14:19:58,131   INFO --- [main]  org.apache.hadoop.hive.ql.session.SessionState(line:641)  :  Created HDFS directory: /tmp/hive/root/94477ea0-2e3b-4484-ab8a-3e3a4c50baba/_tmp_space.db
+2019-07-19 14:19:58,134   INFO --- [main]  org.apache.spark.sql.hive.client.HiveClientImpl(line:54)  :  Warehouse location for Hive client (version 1.2.1) is hdfs://hadoop101:9000/user/hive/warehouse/sparkmall
+2019-07-19 14:19:58,148   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_database: default
+2019-07-19 14:19:58,149   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+2019-07-19 14:19:58,159   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_database: global_temp
+2019-07-19 14:19:58,159   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_database: global_temp	
+2019-07-19 14:19:58,176   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 14:19:58,369   INFO --- [main]  org.apache.spark.sql.execution.SparkSqlParser(line:54)  :  Parsing command: use sparkmall
+2019-07-19 14:20:01,065   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_database: sparkmall
+2019-07-19 14:20:01,066   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_database: sparkmall	
+2019-07-19 14:20:01,203   INFO --- [main]  org.apache.spark.sql.execution.SparkSqlParser(line:54)  :  Parsing command: 
+select v.*
+from user_visit_action v,
+     user_info u
+where v.user_id=u.user_id and 1=1
+       and v.date >= 2019-07-17 and v.date <= 2019-07-25 and u.age >= 20 and u.age <= 50
+2019-07-19 14:20:01,368   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_table : db=sparkmall tbl=user_visit_action
+2019-07-19 14:20:01,371   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_table : db=sparkmall tbl=user_visit_action	
+2019-07-19 14:20:01,569   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,589   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:01,590   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,591   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:01,592   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,593   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,594   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:01,595   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:01,597   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,598   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,599   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,600   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,601   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:01,730   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_table : db=sparkmall tbl=user_visit_action
+2019-07-19 14:20:01,731   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_table : db=sparkmall tbl=user_visit_action	
+2019-07-19 14:20:01,789   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,791   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:01,792   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,793   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:01,794   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,795   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,796   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:01,797   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:01,798   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,799   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,801   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,802   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:01,803   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:02,528   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_table : db=sparkmall tbl=user_info
+2019-07-19 14:20:02,529   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_table : db=sparkmall tbl=user_info	
+2019-07-19 14:20:02,556   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:02,557   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:02,558   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:02,558   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: int
+2019-07-19 14:20:02,559   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:02,560   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:02,562   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore(line:746)  :  0: get_table : db=sparkmall tbl=user_info
+2019-07-19 14:20:02,563   INFO --- [main]  org.apache.hadoop.hive.metastore.HiveMetaStore.audit(line:371)  :  ugi=root	ip=unknown-ip-addr	cmd=get_table : db=sparkmall tbl=user_info	
+2019-07-19 14:20:02,600   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: bigint
+2019-07-19 14:20:02,602   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:02,603   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:02,604   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: int
+2019-07-19 14:20:02,604   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:02,605   INFO --- [main]  org.apache.spark.sql.catalyst.parser.CatalystSqlParser(line:54)  :  Parsing command: string
+2019-07-19 14:20:03,893   INFO --- [main]  org.apache.spark.sql.execution.datasources.FileSourceStrategy(line:54)  :  Pruning directories with: 
+2019-07-19 14:20:03,899   INFO --- [main]  org.apache.spark.sql.execution.datasources.FileSourceStrategy(line:54)  :  Post-Scan Filters: isnotnull(date#1),(cast(date#1 as double) >= 1995.0),(cast(date#1 as double) <= 1987.0),isnotnull(user_id#2L)
+2019-07-19 14:20:03,902   INFO --- [main]  org.apache.spark.sql.execution.datasources.FileSourceStrategy(line:54)  :  Output Data Schema: struct<date: string, user_id: bigint, session_id: string, page_id: bigint, action_time: string ... 11 more fields>
+2019-07-19 14:20:03,904   INFO --- [main]  org.apache.spark.sql.execution.datasources.FileSourceStrategy(line:54)  :  Pushed Filters: IsNotNull(date),IsNotNull(user_id)
+2019-07-19 14:20:03,917   INFO --- [main]  org.apache.spark.sql.execution.datasources.FileSourceStrategy(line:54)  :  Pruning directories with: 
+2019-07-19 14:20:03,918   INFO --- [main]  org.apache.spark.sql.execution.datasources.FileSourceStrategy(line:54)  :  Post-Scan Filters: isnotnull(age#17),(age#17 >= 20),(age#17 <= 50),isnotnull(user_id#14L)
+2019-07-19 14:20:03,919   INFO --- [main]  org.apache.spark.sql.execution.datasources.FileSourceStrategy(line:54)  :  Output Data Schema: struct<user_id: bigint, age: int>
+2019-07-19 14:20:03,921   INFO --- [main]  org.apache.spark.sql.execution.datasources.FileSourceStrategy(line:54)  :  Pushed Filters: IsNotNull(age),GreaterThanOrEqual(age,20),LessThanOrEqual(age,50),IsNotNull(user_id)
+2019-07-19 14:20:04,403   INFO --- [broadcast-exchange-0]  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator(line:54)  :  Code generated in 376.795036 ms
+2019-07-19 14:20:04,627   INFO --- [broadcast-exchange-0]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_0 stored as values in memory (estimated size 139.8 KB, free 836.6 MB)
+2019-07-19 14:20:04,692   INFO --- [broadcast-exchange-0]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_0_piece0 stored as bytes in memory (estimated size 15.4 KB, free 836.5 MB)
+2019-07-19 14:20:04,696   INFO --- [dispatcher-event-loop-0]  org.apache.spark.storage.BlockManagerInfo(line:54)  :  Added broadcast_0_piece0 in memory on 192.168.2.138:59697 (size: 15.4 KB, free: 836.7 MB)
+2019-07-19 14:20:04,701   INFO --- [broadcast-exchange-0]  org.apache.spark.SparkContext(line:54)  :  Created broadcast 0 from run at ThreadPoolExecutor.java:1149
+2019-07-19 14:20:04,718   INFO --- [broadcast-exchange-0]  org.apache.spark.sql.execution.FileSourceScanExec(line:54)  :  Planning scan with bin packing, max size: 4197497 bytes, open cost is considered as scanning 4194304 bytes.
+2019-07-19 14:20:04,943   INFO --- [broadcast-exchange-0]  org.apache.spark.SparkContext(line:54)  :  Starting job: run at ThreadPoolExecutor.java:1149
+2019-07-19 14:20:04,955   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Got job 0 (run at ThreadPoolExecutor.java:1149) with 1 output partitions
+2019-07-19 14:20:04,956   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Final stage: ResultStage 0 (run at ThreadPoolExecutor.java:1149)
+2019-07-19 14:20:04,956   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Parents of final stage: List()
+2019-07-19 14:20:04,958   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Missing parents: List()
+2019-07-19 14:20:04,966   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Submitting ResultStage 0 (MapPartitionsRDD[3] at run at ThreadPoolExecutor.java:1149), which has no missing parents
+2019-07-19 14:20:04,986   INFO --- [dag-scheduler-event-loop]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_1 stored as values in memory (estimated size 11.6 KB, free 836.5 MB)
+2019-07-19 14:20:04,989   INFO --- [dag-scheduler-event-loop]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.4 KB, free 836.5 MB)
+2019-07-19 14:20:04,990   INFO --- [dispatcher-event-loop-1]  org.apache.spark.storage.BlockManagerInfo(line:54)  :  Added broadcast_1_piece0 in memory on 192.168.2.138:59697 (size: 5.4 KB, free: 836.7 MB)
+2019-07-19 14:20:04,990   INFO --- [dag-scheduler-event-loop]  org.apache.spark.SparkContext(line:54)  :  Created broadcast 1 from broadcast at DAGScheduler.scala:996
+2019-07-19 14:20:04,994   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at run at ThreadPoolExecutor.java:1149)
+2019-07-19 14:20:04,996   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.TaskSchedulerImpl(line:54)  :  Adding task set 0.0 with 1 tasks
+2019-07-19 14:20:05,052   INFO --- [dispatcher-event-loop-2]  org.apache.spark.scheduler.TaskSetManager(line:54)  :  Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, ANY, 6621 bytes)
+2019-07-19 14:20:05,063   INFO --- [Executor task launch worker for task 0]  org.apache.spark.executor.Executor(line:54)  :  Running task 0.0 in stage 0.0 (TID 0)
+2019-07-19 14:20:05,134   INFO --- [Executor task launch worker for task 0]  org.apache.spark.sql.execution.datasources.FileScanRDD(line:54)  :  Reading File path: hdfs://192.168.213.101:9000/user/hive/warehouse/sparkmall.db/user_info/part-00000-ddff9583-5d5a-4b1f-a7db-eadbd4bfd004.snappy.parquet, range: 0-3193, partition values: [empty row]
+2019-07-19 14:20:05,684   INFO --- [Executor task launch worker for task 0]  org.apache.parquet.filter2.compat.FilterCompat(line:151)  :  Filtering using predicate: and(and(and(noteq(age, null), gteq(age, 20)), lteq(age, 50)), noteq(user_id, null))
+2019-07-19 14:20:05,828   INFO --- [Executor task launch worker for task 0]  org.apache.hadoop.io.compress.CodecPool(line:178)  :  Got brand-new decompressor [.snappy]
+2019-07-19 14:20:05,941   INFO --- [Executor task launch worker for task 0]  org.apache.spark.executor.Executor(line:54)  :  Finished task 0.0 in stage 0.0 (TID 0). 2340 bytes result sent to driver
+2019-07-19 14:20:05,952   INFO --- [task-result-getter-0]  org.apache.spark.scheduler.TaskSetManager(line:54)  :  Finished task 0.0 in stage 0.0 (TID 0) in 926 ms on localhost (executor driver) (1/1)
+2019-07-19 14:20:05,954   INFO --- [task-result-getter-0]  org.apache.spark.scheduler.TaskSchedulerImpl(line:54)  :  Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2019-07-19 14:20:05,958   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  ResultStage 0 (run at ThreadPoolExecutor.java:1149) finished in 0.947 s
+2019-07-19 14:20:05,963   INFO --- [broadcast-exchange-0]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Job 0 finished: run at ThreadPoolExecutor.java:1149, took 1.018902 s
+2019-07-19 14:20:06,002   INFO --- [broadcast-exchange-0]  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator(line:54)  :  Code generated in 9.952371 ms
+2019-07-19 14:20:06,006   INFO --- [broadcast-exchange-0]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_2 stored as values in memory (estimated size 1024.8 KB, free 835.5 MB)
+2019-07-19 14:20:06,013   INFO --- [broadcast-exchange-0]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_2_piece0 stored as bytes in memory (estimated size 1120.0 B, free 835.5 MB)
+2019-07-19 14:20:06,014   INFO --- [dispatcher-event-loop-1]  org.apache.spark.storage.BlockManagerInfo(line:54)  :  Added broadcast_2_piece0 in memory on 192.168.2.138:59697 (size: 1120.0 B, free: 836.7 MB)
+2019-07-19 14:20:06,017   INFO --- [broadcast-exchange-0]  org.apache.spark.SparkContext(line:54)  :  Created broadcast 2 from run at ThreadPoolExecutor.java:1149
+2019-07-19 14:20:06,087   INFO --- [main]  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator(line:54)  :  Code generated in 58.584944 ms
+2019-07-19 14:20:06,105   INFO --- [main]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_3 stored as values in memory (estimated size 150.4 KB, free 835.4 MB)
+2019-07-19 14:20:06,122   INFO --- [main]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_3_piece0 stored as bytes in memory (estimated size 15.7 KB, free 835.4 MB)
+2019-07-19 14:20:06,123   INFO --- [dispatcher-event-loop-2]  org.apache.spark.storage.BlockManagerInfo(line:54)  :  Added broadcast_3_piece0 in memory on 192.168.2.138:59697 (size: 15.7 KB, free: 836.7 MB)
+2019-07-19 14:20:06,124   INFO --- [main]  org.apache.spark.SparkContext(line:54)  :  Created broadcast 3 from rdd at RDDUtil.scala:34
+2019-07-19 14:20:06,125   INFO --- [main]  org.apache.spark.sql.execution.FileSourceScanExec(line:54)  :  Planning scan with bin packing, max size: 6814023 bytes, open cost is considered as scanning 4194304 bytes.
+2019-07-19 14:20:06,153   INFO --- [main]  org.apache.spark.SparkContext(line:54)  :  Starting job: foreach at Test.scala:38
+2019-07-19 14:20:06,155   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Got job 1 (foreach at Test.scala:38) with 1 output partitions
+2019-07-19 14:20:06,155   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Final stage: ResultStage 1 (foreach at Test.scala:38)
+2019-07-19 14:20:06,156   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Parents of final stage: List()
+2019-07-19 14:20:06,156   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Missing parents: List()
+2019-07-19 14:20:06,156   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Submitting ResultStage 1 (MapPartitionsRDD[7] at rdd at RDDUtil.scala:34), which has no missing parents
+2019-07-19 14:20:06,237   INFO --- [dag-scheduler-event-loop]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_4 stored as values in memory (estimated size 32.6 KB, free 835.3 MB)
+2019-07-19 14:20:06,242   INFO --- [dag-scheduler-event-loop]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  Block broadcast_4_piece0 stored as bytes in memory (estimated size 12.8 KB, free 835.3 MB)
+2019-07-19 14:20:06,244   INFO --- [dispatcher-event-loop-3]  org.apache.spark.storage.BlockManagerInfo(line:54)  :  Added broadcast_4_piece0 in memory on 192.168.2.138:59697 (size: 12.8 KB, free: 836.7 MB)
+2019-07-19 14:20:06,244   INFO --- [dag-scheduler-event-loop]  org.apache.spark.SparkContext(line:54)  :  Created broadcast 4 from broadcast at DAGScheduler.scala:996
+2019-07-19 14:20:06,245   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[7] at rdd at RDDUtil.scala:34)
+2019-07-19 14:20:06,245   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.TaskSchedulerImpl(line:54)  :  Adding task set 1.0 with 1 tasks
+2019-07-19 14:20:06,247   INFO --- [dispatcher-event-loop-0]  org.apache.spark.scheduler.TaskSetManager(line:54)  :  Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, ANY, 6618 bytes)
+2019-07-19 14:20:06,247   INFO --- [Executor task launch worker for task 1]  org.apache.spark.executor.Executor(line:54)  :  Running task 0.0 in stage 1.0 (TID 1)
+2019-07-19 14:20:06,301   INFO --- [Executor task launch worker for task 1]  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator(line:54)  :  Code generated in 25.571212 ms
+2019-07-19 14:20:06,309   INFO --- [Executor task launch worker for task 1]  org.apache.spark.sql.execution.datasources.FileScanRDD(line:54)  :  Reading File path: hdfs://192.168.213.101:9000/user/hive/warehouse/sparkmall.db/user_visit_action/part-00000-a8e8b84a-bac8-48cf-ac68-ec19dbdd77dd.snappy.parquet, range: 0-2619719, partition values: [empty row]
+2019-07-19 14:20:06,429   INFO --- [Executor task launch worker for task 1]  org.apache.parquet.filter2.compat.FilterCompat(line:151)  :  Filtering using predicate: noteq(user_id, null)
+2019-07-19 14:20:07,053   INFO --- [Executor task launch worker for task 1]  org.apache.spark.executor.Executor(line:54)  :  Finished task 0.0 in stage 1.0 (TID 1). 2398 bytes result sent to driver
+2019-07-19 14:20:07,057   INFO --- [task-result-getter-1]  org.apache.spark.scheduler.TaskSetManager(line:54)  :  Finished task 0.0 in stage 1.0 (TID 1) in 811 ms on localhost (executor driver) (1/1)
+2019-07-19 14:20:07,057   INFO --- [task-result-getter-1]  org.apache.spark.scheduler.TaskSchedulerImpl(line:54)  :  Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2019-07-19 14:20:07,058   INFO --- [dag-scheduler-event-loop]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  ResultStage 1 (foreach at Test.scala:38) finished in 0.813 s
+2019-07-19 14:20:07,059   INFO --- [main]  org.apache.spark.scheduler.DAGScheduler(line:54)  :  Job 1 finished: foreach at Test.scala:38, took 0.904627 s
+2019-07-19 14:20:07,065   INFO --- [main]  org.spark_project.jetty.server.ServerConnector(line:306)  :  Stopped Spark@4052274f{HTTP/1.1}{0.0.0.0:4040}
+2019-07-19 14:20:07,066   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@6f0ca692{/stages/stage/kill,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,067   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@4ba534b0{/jobs/job/kill,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,067   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@71ae31b0{/api,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,067   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@73c60324{/,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,067   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@58bf8650{/static,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,068   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@34a1d21f{/executors/threadDump/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,068   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@7adf16aa{/executors/threadDump,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,068   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@16f7b4af{/executors/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,068   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@6731787b{/executors,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,068   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@2cac4385{/environment/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,069   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@40258c2f{/environment,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,069   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@3fc9dfc5{/storage/rdd/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,070   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@7c56e013{/storage/rdd,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,070   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@4275c20c{/storage/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,071   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@34a97744{/storage,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,071   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@2c3dec30{/stages/pool/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,071   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@e260766{/stages/pool,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,071   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@77602954{/stages/stage/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,071   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@64df9a61{/stages/stage,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,072   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@3ce3db41{/stages/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,072   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@51850751{/stages,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,072   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@38f57b3d{/jobs/job/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,072   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@5ef0d29e{/jobs/job,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,073   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@6ca0256d{/jobs/json,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,074   INFO --- [main]  org.spark_project.jetty.server.handler.ContextHandler(line:865)  :  Stopped o.s.j.s.ServletContextHandler@28d6290{/jobs,null,UNAVAILABLE,@Spark}
+2019-07-19 14:20:07,076   INFO --- [main]  org.apache.spark.ui.SparkUI(line:54)  :  Stopped Spark web UI at http://192.168.2.138:4040
+2019-07-19 14:20:07,116   INFO --- [dispatcher-event-loop-1]  org.apache.spark.MapOutputTrackerMasterEndpoint(line:54)  :  MapOutputTrackerMasterEndpoint stopped!
+2019-07-19 14:20:07,126   INFO --- [main]  org.apache.spark.storage.memory.MemoryStore(line:54)  :  MemoryStore cleared
+2019-07-19 14:20:07,127   INFO --- [main]  org.apache.spark.storage.BlockManager(line:54)  :  BlockManager stopped
+2019-07-19 14:20:07,132   INFO --- [main]  org.apache.spark.storage.BlockManagerMaster(line:54)  :  BlockManagerMaster stopped
+2019-07-19 14:20:07,134   INFO --- [dispatcher-event-loop-2]  org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint(line:54)  :  OutputCommitCoordinator stopped!
+2019-07-19 14:20:07,136   INFO --- [main]  org.apache.spark.SparkContext(line:54)  :  Successfully stopped SparkContext
+2019-07-19 14:20:07,142   INFO --- [Thread-1]  org.apache.spark.util.ShutdownHookManager(line:54)  :  Shutdown hook called
+2019-07-19 14:20:07,143   INFO --- [Thread-1]  org.apache.spark.util.ShutdownHookManager(line:54)  :  Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-6b875fe0-763e-4d96-8c02-3b416546daa2
+2019-07-19 14:26:04,230   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 14:26:04,244   WARN --- [main]  RDDUtil (line:31)  :  
+select v.*
+from user_visit_action v,
+     user_info u
+where v.user_id=u.user_id and 1=1
+       and v.`date` >= '2019-07-17' and v.`date` <= '2019-07-25' and u.age >= 20 and u.age <= 50
+2019-07-19 14:26:47,292   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 14:26:47,304   WARN --- [main]  RDDUtil (line:31)  :  
+select v.*
+from user_visit_action v,
+     user_info u
+where v.user_id=u.user_id and 1=1
+       and v.`date` >= '2019-07-17' and v.`date` <= '2019-07-25' and u.age >= 20 and u.age <= 50
+2019-07-19 15:12:46,950   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 15:13:11,139   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 15:13:49,157   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 15:14:18,281   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException

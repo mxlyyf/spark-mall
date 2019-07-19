@@ -3,8 +3,10 @@ package com.mxl.sparkmall.offline.rdd
 import com.mxl.sparkmall.common.bean.UserVisitAction
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.slf4j.{Logger, LoggerFactory}
 
 object RDDUtil {
+  val logger:Logger = LoggerFactory.getLogger("RDDUtil")
 
   def userVisitActionRdd(spark: SparkSession): RDD[UserVisitAction] = {
     var sql =
@@ -16,10 +18,10 @@ object RDDUtil {
       """.stripMargin
 
     if (!startDate.isEmpty) {
-      sql += s" and v.date >= ${startDate}"
+      sql += s" and v.`date` >= '${startDate}'"
     }
     if (!endDate.isEmpty) {
-      sql += s" and v.date <= ${endDate}"
+      sql += s" and v.`date` <= '${endDate}'"
     }
     if (!startAge.isEmpty) {
       sql += s" and u.age >= ${startAge}"
@@ -27,10 +29,13 @@ object RDDUtil {
     if (!endAge.isEmpty) {
       sql += s" and u.age <= ${endAge}"
     }
+    logger.warn(sql)
 
     import spark.implicits._
 
     spark.sql(s"use ${HIVE_DATABASE}")
     spark.sql(sql).as[UserVisitAction].rdd
   }
+
+
 }
