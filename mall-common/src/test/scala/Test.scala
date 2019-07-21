@@ -8,7 +8,7 @@ class Test extends Assert {
 
   var spark: SparkSession = _
 
-  @Before
+  //@Before
   def befor: Unit = {
     spark = SparkSession
       .builder()
@@ -19,7 +19,7 @@ class Test extends Assert {
       .getOrCreate()
   }
 
-  @After
+  //@After
   def after: Unit = {
     spark.stop()
   }
@@ -42,7 +42,7 @@ class Test extends Assert {
 
   @junit.Test
   def test03: Unit ={
-    println(RedisUtil.getJedis)
+    println(RedisUtil.getJedis.smembers("blacklist"))
   }
 }
 

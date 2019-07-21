@@ -10,5 +10,5 @@ case class AdsLogInfo(ts: Long,
                       adsId: String) {
   val dayString: String = new SimpleDateFormat("yyyy-MM-dd").format(new Date(ts))
 
-  override def toString: String = s"$dayString:$area:$city:$adsId"
+  override def toString: String = s"$dayString:$area:$city:$userId:$adsId"
 }
