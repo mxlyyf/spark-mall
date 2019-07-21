@@ -5260,3 +5260,70 @@ where v.user_id=u.user_id and 1=1
 2019-07-19 15:14:18,281   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
 2019-07-19 18:33:00,237   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
 2019-07-19 18:33:18,560   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 20:59:56,368   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 21:26:42,161   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 21:27:16,005   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-19 21:28:59,894   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 00:10:47,870   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 00:14:08,828   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 00:14:18,136  ERROR --- [Executor task launch worker for task 2]  org.apache.spark.executor.Executor(line:91)  :  Exception in task 0.0 in stage 2.0 (TID 2)
+scala.MatchError: (Map()沈阳,1) (of class scala.Tuple2)
+	at org.apache.spark.sql.catalyst.CatalystTypeConverters$MapConverter.toCatalystImpl(CatalystTypeConverters.scala:206)
+	at org.apache.spark.sql.catalyst.CatalystTypeConverters$MapConverter.toCatalystImpl(CatalystTypeConverters.scala:194)
+	at org.apache.spark.sql.catalyst.CatalystTypeConverters$CatalystTypeConverter.toCatalyst(CatalystTypeConverters.scala:103)
+	at org.apache.spark.sql.catalyst.CatalystTypeConverters$$anonfun$createToCatalystConverter$2.apply(CatalystTypeConverters.scala:383)
+	at org.apache.spark.sql.execution.aggregate.MutableAggregationBufferImpl.update(udaf.scala:246)
+	at com.mxl.sparkmall.offline.udaf.CityRemarkUDAF.update(CityRemarkUDAF.scala:30)
+	at org.apache.spark.sql.execution.aggregate.ScalaUDAF.update(udaf.scala:425)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator$$anonfun$1$$anonfun$applyOrElse$1.apply(AggregationIterator.scala:171)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator$$anonfun$1$$anonfun$applyOrElse$1.apply(AggregationIterator.scala:171)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator$$anonfun$generateProcessRow$1.apply(AggregationIterator.scala:187)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator$$anonfun$generateProcessRow$1.apply(AggregationIterator.scala:181)
+	at org.apache.spark.sql.execution.aggregate.SortBasedAggregationIterator.processCurrentSortedGroup(SortBasedAggregationIterator.scala:122)
+	at org.apache.spark.sql.execution.aggregate.SortBasedAggregationIterator.next(SortBasedAggregationIterator.scala:157)
+	at org.apache.spark.sql.execution.aggregate.SortBasedAggregationIterator.next(SortBasedAggregationIterator.scala:29)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:150)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:96)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)
+	at org.apache.spark.scheduler.Task.run(Task.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-20 00:14:18,161   WARN --- [task-result-getter-2]  org.apache.spark.scheduler.TaskSetManager(line:66)  :  Lost task 0.0 in stage 2.0 (TID 2, localhost, executor driver): scala.MatchError: (Map()沈阳,1) (of class scala.Tuple2)
+	at org.apache.spark.sql.catalyst.CatalystTypeConverters$MapConverter.toCatalystImpl(CatalystTypeConverters.scala:206)
+	at org.apache.spark.sql.catalyst.CatalystTypeConverters$MapConverter.toCatalystImpl(CatalystTypeConverters.scala:194)
+	at org.apache.spark.sql.catalyst.CatalystTypeConverters$CatalystTypeConverter.toCatalyst(CatalystTypeConverters.scala:103)
+	at org.apache.spark.sql.catalyst.CatalystTypeConverters$$anonfun$createToCatalystConverter$2.apply(CatalystTypeConverters.scala:383)
+	at org.apache.spark.sql.execution.aggregate.MutableAggregationBufferImpl.update(udaf.scala:246)
+	at com.mxl.sparkmall.offline.udaf.CityRemarkUDAF.update(CityRemarkUDAF.scala:30)
+	at org.apache.spark.sql.execution.aggregate.ScalaUDAF.update(udaf.scala:425)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator$$anonfun$1$$anonfun$applyOrElse$1.apply(AggregationIterator.scala:171)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator$$anonfun$1$$anonfun$applyOrElse$1.apply(AggregationIterator.scala:171)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator$$anonfun$generateProcessRow$1.apply(AggregationIterator.scala:187)
+	at org.apache.spark.sql.execution.aggregate.AggregationIterator$$anonfun$generateProcessRow$1.apply(AggregationIterator.scala:181)
+	at org.apache.spark.sql.execution.aggregate.SortBasedAggregationIterator.processCurrentSortedGroup(SortBasedAggregationIterator.scala:122)
+	at org.apache.spark.sql.execution.aggregate.SortBasedAggregationIterator.next(SortBasedAggregationIterator.scala:157)
+	at org.apache.spark.sql.execution.aggregate.SortBasedAggregationIterator.next(SortBasedAggregationIterator.scala:29)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:150)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:96)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)
+	at org.apache.spark.scheduler.Task.run(Task.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-07-20 00:14:18,165  ERROR --- [task-result-getter-2]  org.apache.spark.scheduler.TaskSetManager(line:70)  :  Task 0 in stage 2.0 failed 1 times; aborting job
+2019-07-20 00:18:52,176   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 00:22:03,059   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 13:59:38,999   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 14:29:54,270   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 14:45:18,229   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 14:45:59,610   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 14:48:00,506   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 14:57:52,261   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-20 15:05:54,651   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException
+2019-07-21 17:50:25,427   WARN --- [main]  org.apache.hadoop.hive.metastore.ObjectStore(line:568)  :  Failed to get database global_temp, returning NoSuchObjectException

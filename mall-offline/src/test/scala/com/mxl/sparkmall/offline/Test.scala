@@ -1,94 +1,104 @@
 package com.mxl.sparkmall.offline
 
-import com.mxl.sparkmall.offline.rdd.RDDUtil
-import org.apache.spark.sql.SparkSession
 import org.junit
-import org.junit.{After, Before}
-import org.slf4j.{Logger, LoggerFactory}
 
 import scala.collection.immutable.HashMap
 import scala.collection.mutable
+import scala.collection.mutable.ArrayBuffer
 
-class Test{
-  val logger:Logger = LoggerFactory.getLogger(classOf[Test])
-
-  var spark: SparkSession = _
-
-  @Before
-  def befor: Unit = {
-    spark = SparkSession
-      .builder()
-      .master("local[1]")
-      .appName("JunitTest2")
-      .enableHiveSupport()
-      .config("spark.sql.warehouse.dir", "hdfs://hadoop101:9000/user/hive/warehouse/sparkmall")
-      .getOrCreate()
-  }
-
-  @After
-  def after: Unit = {
-    spark.stop()
-  }
-
-
+class Test {
   @junit.Test
-  def test01: Unit = {
-    spark.sql("use sparkmall")
-    spark.sql("select count(*) from user_visit_action").show()
-
-  }
-
-  @junit.Test
-  def test02: Unit = {
-    RDDUtil.userVisitActionRdd(spark).foreach(println)
-  }
-
-  @junit.Test
-  def test03: Unit ={
+  def test03: Unit = {
     var map: Map[String, (Long, Long, Long)] = new HashMap[String, (Long, Long, Long)]
 
-    map += "1" -> (1,1,1)
-    map += "2" -> (2,2,2)
+    map += "1" -> (1, 1, 1)
+    map += "2" -> (2, 2, 2)
 
-    map += "1" -> (2,3,1)
+    map += "1" -> (2, 3, 1)
     println(map.size)
     map.foreach(println)
   }
 
   @junit.Test
-  def test04: Unit ={
-    var list: List[String] = List("a","b","c","d")
+  def test04: Unit = {
+    var list: List[String] = List("a", "b", "c", "d")
+
+    val ints1: List[Int] = 50 :: 40 :: 30 :: 20 :: 10 :: Nil
+
+    val ints2: List[Int] = ints1 :+ 11 :+ 12
+
+    val words: List[String] = "alice" :: "eillen" :: "jakck" :: Nil
+
+    println(words.map(_.toUpperCase))
+    println(words.flatMap(_.toUpperCase))
 
     println(list.contains("b"))
+    println(ints1)
+    println(ints2.filter(x => x % 2 == 0))
   }
 
   @junit.Test
-  def test05: Unit ={
-    spark.sql("use sparkmall")
+  def test07 = {
+    var list1 = List(10, 1, 3, 5, 8, 9, 22, 89)
+    // 需求:计算1000减去集合中的所有的元素之后的差
+    val result: Int = list1.fold(1000)((A1, A2) => A1 - A2)
+    println(result)
 
-    val sql = """select
-                | t3.area,
-                | t4.product_name,
-                | t3.click_count,
-                | t3.rk
-                |from
-                |(
-                |select
-                |	t2.area,
-                |	t2.click_product_id,
-                |	t2.click_count,
-                |	dense_rank() over( partition by t2.area order by t2.click_count desc) rk
-                |from
-                |	(
-                |		select t1.area,t.click_product_id,count(t.click_product_id) click_count
-                |			from user_visit_action t,city_info t1
-                |			where t.click_product_id > -1 and t.city_id=t1.city_id
-                |			group by t1.area,t.click_product_id
-                |	) t2 ) t3,
-                |	product_info t4
-                |	where t4.product_id = t3.click_product_id and rk <= 3""".stripMargin
-    spark.sql(sql).show(30)
+    println(list1.scan(100)((x, y) => x - y))
 
   }
+
+  @junit.Test
+  def test05 = {
+    val list1 = List(10, 1, 1, 5, 8, 9, 22, 89)
+    val list2 = List("abc", "dds", "bed", "dae", "qwe", "wer", "ipo", "yui")
+    val list3: List[(Int, String)] = list1.zip(list2)
+
+    println(list1.sortBy(x => -x))
+    println(list2.sortBy(x => x)(Ordering.String.reverse))
+    println(list3.sortBy({
+      case (x, y) => (x, y)
+    })(Ordering.Tuple2(Ordering.Int, Ordering.String.reverse)))
+  }
+
+  @junit.Test
+  def test06: Unit = {
+    var list: List[(String, String)] = List[(String, String)]("hunan" -> "chenzhou", "hunan" -> "hengyang", "hunan" -> "yueyang", "hunan" -> "changsha",
+      "hubei" -> "wuhan", "hubei" -> "ezhou", "hubei" -> "huanggang", "hubei" -> "huangshi")
+    list :+= ("zhejiang" -> "hangzhou")
+    list :+= ("zhejiang" -> "suzhou")
+    println(list.size)
+
+    val stringToList: Map[String, List[(String, String)]] = list.groupBy({
+      case (x, y) => x //按照x分组
+    })
+    println(stringToList)
+
+    println(list.groupBy(_._1).mapValues(_.map(_._2)))
+  }
+
+  @junit.Test
+  def test01: Unit = {
+    val chars = "AAAAAAAAAAAAAAA BBBBBBBBBBBBBBBBBBBBB CCCCCCCCCCCCCCCCCCCCCC DDDDDDDDDDDDDDDDDDDDDDD"
+    //val map = Map[Char,Int]()
+    val list: ArrayBuffer[Char] = new ArrayBuffer[Char]()
+
+    val chars2: ArrayBuffer[Char] = chars.foldLeft(list) {
+      (list, c) =>
+        list.append(c)
+        list
+    }
+    println(chars2)
+
+    var map: mutable.Map[Char, Int] = mutable.HashMap[Char, Int]()
+    chars2.foldLeft(map)({
+      (map, c) =>
+        map += c -> (map.getOrElse(c, 0) + 1)
+    })
+    println(map)
+
+  }
+
+
 }
 

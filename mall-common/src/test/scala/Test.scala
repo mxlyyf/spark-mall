@@ -2,7 +2,7 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.junit
 import org.junit._
 import com.mxl.sparkmall.common._
-import com.mxl.sparkmall.common.util.RandomUtil
+import com.mxl.sparkmall.common.util.{RandomUtil, RedisUtil}
 
 class Test extends Assert {
 
@@ -38,6 +38,11 @@ class Test extends Assert {
     println(RandomUtil.getRandomDate("2019-07-10", "2019-07-18"))
     println(RandomUtil.getRandomDate("2019-07-10", "2019-07-18"))
     println(RandomUtil.getRandomDate("2019-07-10", "2019-07-18"))
+  }
+
+  @junit.Test
+  def test03: Unit ={
+    println(RedisUtil.getJedis)
   }
 }
 
