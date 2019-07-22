@@ -6,6 +6,7 @@ import com.mxl.sparkmall.common.util.RedisUtil
 import com.mxl.sparkmall.realtime.AdsLogInfo
 import org.apache.spark.streaming.dstream.DStream
 
+//需求5：广告实时黑名单统计
 object BlackListApp {
   //加入黑名单
   def PutUserToBlackList(notOnBlackListDstream: DStream[AdsLogInfo]) = {

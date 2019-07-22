@@ -36,16 +36,16 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.json4s/json4s-native -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.json4s</groupId>
             <artifactId>json4s-native_2.11</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.json4s/json4s-jackson -->
+        &lt;!&ndash; https://mvnrepository.com/artifact/org.json4s/json4s-jackson &ndash;&gt;
         <dependency>
             <groupId>org.json4s</groupId>
             <artifactId>json4s-jackson_2.11</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
 </project>
