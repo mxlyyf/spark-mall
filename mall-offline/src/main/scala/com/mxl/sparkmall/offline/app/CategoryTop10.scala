@@ -9,6 +9,7 @@ import com.mxl.sparkmall.offline.bean.CategoryCountInfo
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 
+//需求1：按照每个品类的 点击、下单、支付 的量来统计热门品类
 object CategoryTop10 {
   def staticsTop10Categorys(spark: SparkSession, userVisitActionRDD: RDD[UserVisitAction], taskId: String) = {
     val acc: StaticsAccu1 = new StaticsAccu1

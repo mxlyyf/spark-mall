@@ -6,6 +6,7 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{SaveMode, SparkSession}
 import com.mxl.sparkmall.common._
 
+//需求2：Top10热门品类中每个品类的 Top10 活跃 Session 统计
 object CategoryTop10SessionIdTop10 {
   def top10CategorySession(spark: SparkSession, top10Categorys: List[CategoryCountInfo], userVisitActionRDD: RDD[UserVisitAction], taskId: String): Unit = {
     val top10CategoryIds: List[String] = top10Categorys.map(category => category.categoryId)

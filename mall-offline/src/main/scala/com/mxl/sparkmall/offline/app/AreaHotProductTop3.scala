@@ -4,6 +4,7 @@ import com.mxl.sparkmall.common.{JDBC_PASSWORD, JDBC_URL, JDBC_USER}
 import com.mxl.sparkmall.offline.udaf.CityRemarkUDAF
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
+//需求4：各区域热门商品（点击量）Top3
 object AreaHotProductTop3 {
 
   def statisticAreaHotProductTop3(spark: SparkSession): Unit = {
