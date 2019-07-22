@@ -17,6 +17,7 @@
     <properties>
         <jedis.version>2.9.0</jedis.version>
         <spark.version>2.1.1</spark.version>
+        <json4s.version>3.2.11</json4s.version>
     </properties>
 
     <dependencies>
@@ -68,6 +69,19 @@
                 <version>${spark.version}</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/org.json4s/json4s-native -->
+            <dependency>
+                <groupId>org.json4s</groupId>
+                <artifactId>json4s-native_2.11</artifactId>
+                <version>${json4s.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.json4s/json4s-jackson -->
+            <dependency>
+                <groupId>org.json4s</groupId>
+                <artifactId>json4s-jackson_2.11</artifactId>
+                <version>${json4s.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

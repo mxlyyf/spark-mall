@@ -4,7 +4,7 @@ import java.util.UUID
 
 import com.mxl.sparkmall.common.bean.UserVisitAction
 import com.mxl.sparkmall.offline.app.CategoryTop10._
-import com.mxl.sparkmall.offline.app.CategoryTop10SessionIdTop10
+import com.mxl.sparkmall.offline.app.{AreaHotProductTop3, CategoryTop10SessionIdTop10}
 import com.mxl.sparkmall.offline.bean.CategoryCountInfo
 import com.mxl.sparkmall.offline.rdd.RDDUtil
 import org.apache.spark.SparkContext
@@ -32,15 +32,12 @@ object OfflineApp {
     val top10categorys: List[CategoryCountInfo] = staticsTop10Categorys(spark, userVisitActionRDD, taskId)
 
     //需求2：Top10热门品类中每个品类的 Top10 活跃 Session 统计
-    CategoryTop10SessionIdTop10.top10CategorySession(spark,top10categorys,userVisitActionRDD,taskId)
+    //CategoryTop10SessionIdTop10.top10CategorySession(spark,top10categorys,userVisitActionRDD,taskId)
 
-    //需求3：
+    //需求3：页面单跳转化率统计
 
-    //需求4：
-
-    //需求5：
-
-    //需求6：
+    //需求4：各区域热门商品（点击量）Top3
+    AreaHotProductTop3.statisticAreaHotProductTop3(spark)
 
   }
 }

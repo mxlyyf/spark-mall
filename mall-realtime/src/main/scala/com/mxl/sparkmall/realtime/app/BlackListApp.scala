@@ -9,8 +9,8 @@ import org.apache.spark.streaming.dstream.DStream
 object BlackListApp {
   //加入黑名单
   def PutUserToBlackList(notOnBlackListDstream: DStream[AdsLogInfo]) = {
-    val key_blacklist = "blacklist"
-    val key = "day:user:ad"
+    val key_blacklist = "blacklist"//set类型
+    val key = "day:user:ad"        //hash类型
 
     notOnBlackListDstream.foreachRDD(rdd => {
       rdd.foreachPartition(adsLogIterator => {
@@ -22,7 +22,7 @@ object BlackListApp {
           val field = s"${adsLog.dayString}:${adsLog.userId}:${adsLog.adsId}"
           //向redis的hashset的field的值增加1，返回的就是加1后的点击总数
           val clickCount: lang.Long = jedis.hincrBy(key, field, 1)
-          if (clickCount > 100) {
+          if (clickCount > 1000) {
             //加入黑名单中
             jedis.sadd(key_blacklist, adsLog.userId)
           }

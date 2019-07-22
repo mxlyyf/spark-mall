@@ -35,6 +35,17 @@
             <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.json4s/json4s-native -->
+        <dependency>
+            <groupId>org.json4s</groupId>
+            <artifactId>json4s-native_2.11</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.json4s/json4s-jackson -->
+        <dependency>
+            <groupId>org.json4s</groupId>
+            <artifactId>json4s-jackson_2.11</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

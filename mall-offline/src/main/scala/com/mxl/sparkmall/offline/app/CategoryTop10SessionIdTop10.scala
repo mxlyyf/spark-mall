@@ -38,9 +38,9 @@ object CategoryTop10SessionIdTop10 {
     //通过df写入sql
     resultRdd.toDF().write.format("jdbc")
       .option("url", JDBC_URL)
-      .option("dbtable", "category_top10_session_count")
       .option("user", JDBC_USER)
       .option("password", JDBC_PASSWORD)
+      .option("dbtable", "category_top10_session_count")
       .mode(SaveMode.Overwrite)
       .save()
   }
