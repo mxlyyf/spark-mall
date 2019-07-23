@@ -2,8 +2,8 @@ server:
   port: 8080
 kafka:
   topic:
-    event: event_log_topic #
-    start: start_log_topic #
+    event: sparkmall_event_log_topic #
+    start: sparkmall_start_log_topic #
 spring:
   kafka:
     bootstrap-servers: hadoop101:9092,hadoop102:9092,hadoop103:9092
