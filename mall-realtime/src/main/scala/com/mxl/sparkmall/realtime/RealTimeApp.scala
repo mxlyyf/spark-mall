@@ -3,7 +3,7 @@ package com.mxl.sparkmall.realtime
 import java.util.Set
 
 import com.mxl.sparkmall.common._
-import com.mxl.sparkmall.common.util.RedisUtil
+import com.mxl.sparkmall.common.util.{MyKafkaUtil, RedisUtil}
 import com.mxl.sparkmall.realtime.app.{AreaCityAdClickCountPerDayApp, AreaHotAdTop3PerDay, BlackListApp}
 import com.mxl.sparkmall.realtime.util.MyKafkaUtil
 import org.apache.kafka.clients.consumer.ConsumerRecord

@@ -1,0 +1,12 @@
+server:
+  port: 8080
+kafka:
+  topic:
+    event: event_log_topic #
+    start: start_log_topic #
+spring:
+  kafka:
+    bootstrap-servers: hadoop101:9092,hadoop102:9092,hadoop103:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
