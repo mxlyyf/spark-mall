@@ -1,4 +1,4 @@
-package com.mxl.sparkmall.realtime
+package com.mxl.sparkmall.common.bean
 
 import java.text.SimpleDateFormat
 import java.util.Date

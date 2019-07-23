@@ -3,6 +3,7 @@ package com.mxl.sparkmall.realtime
 import java.util.Set
 
 import com.mxl.sparkmall.common._
+import com.mxl.sparkmall.common.bean.AdsLogInfo
 import com.mxl.sparkmall.common.util.{MyKafkaUtil, RedisUtil}
 import com.mxl.sparkmall.realtime.app.{AreaCityAdClickCountPerDayApp, AreaHotAdTop3PerDay, BlackListApp}
 import org.apache.kafka.clients.consumer.ConsumerRecord
@@ -53,7 +54,6 @@ object RealTimeApp {
     AreaHotAdTop3PerDay.areaHotAdTop3PerDay(areaCityAdClickCountPerDayDstream)
 
     //需求8：各广告最近 1 小时内各分钟的点击量
-
 
     ssc.start
     ssc.awaitTermination

@@ -2,8 +2,8 @@ package com.mxl.sparkmall.realtime.app
 
 import java.{lang, util}
 
+import com.mxl.sparkmall.common.bean.AdsLogInfo
 import com.mxl.sparkmall.common.util.RedisUtil
-import com.mxl.sparkmall.realtime.AdsLogInfo
 import org.apache.spark.streaming.dstream.DStream
 
 //需求5：广告实时黑名单统计

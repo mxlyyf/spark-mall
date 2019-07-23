@@ -3,8 +3,8 @@ package com.mxl.sparkmall.realtime.app
 import java.text.SimpleDateFormat
 import java.util.Date
 
+import com.mxl.sparkmall.common.bean.AdsLogInfo
 import com.mxl.sparkmall.common.util.RedisUtil
-import com.mxl.sparkmall.realtime.AdsLogInfo
 import org.apache.spark.streaming.dstream.DStream
 
 //需求6：每天各地区各城市各广告点击量实时统计

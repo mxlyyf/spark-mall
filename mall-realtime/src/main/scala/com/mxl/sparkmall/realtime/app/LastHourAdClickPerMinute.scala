@@ -1,6 +1,6 @@
 package com.mxl.sparkmall.realtime.app
 
-import com.mxl.sparkmall.realtime.AdsLogInfo
+import com.mxl.sparkmall.common.bean.AdsLogInfo
 import org.apache.spark.streaming.{Minutes, Seconds}
 import org.apache.spark.streaming.dstream.DStream
 
