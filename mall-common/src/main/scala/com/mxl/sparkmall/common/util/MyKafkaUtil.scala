@@ -1,4 +1,4 @@
-package com.mxl.sparkmall.realtime.util
+package com.mxl.sparkmall.common.util
 
 import com.mxl.sparkmall.common._
 import org.apache.kafka.clients.consumer.ConsumerRecord
