@@ -16,7 +16,7 @@ object RealTimeApp {
   def main(args: Array[String]): Unit = {
     val conf: SparkConf = new SparkConf().setAppName("RealTimeApp").setMaster("local[2]")
     val sc = new SparkContext(conf)
-    val ssc = new StreamingContext(sc, Seconds(2))
+    val ssc = new StreamingContext(sc, Seconds(3))
 
     //设置checkpoint
     sc.setCheckpointDir("hdfs://192.168.213.101:9000/spark-checkpoint")
