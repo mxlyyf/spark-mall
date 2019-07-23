@@ -5,7 +5,6 @@ import java.util.Set
 import com.mxl.sparkmall.common._
 import com.mxl.sparkmall.common.util.{MyKafkaUtil, RedisUtil}
 import com.mxl.sparkmall.realtime.app.{AreaCityAdClickCountPerDayApp, AreaHotAdTop3PerDay, BlackListApp}
-import com.mxl.sparkmall.realtime.util.MyKafkaUtil
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.streaming.dstream.{DStream, InputDStream}

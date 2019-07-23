@@ -114,8 +114,8 @@ object GenStartAndEventLogApp {
 
   // 开始生成日志
   def generateLog(): Unit = {
-    //val url = "http://192.168.213.101/log"
-    val url = "http://127.0.0.1:8080/log"
+    val url = "http://192.168.213.101/log"
+    //val url = "http://127.0.0.1:8080/log"
     (0 to startupNum).foreach(_ => {
       // 生成一条启动日志
       val oneStartupLog: String = initOneStartupLog()
