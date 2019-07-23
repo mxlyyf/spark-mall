@@ -7,8 +7,8 @@ import com.mxl.sparkmall.common.util.{Okhttp3Client, RandomOptions, RandomUtil}
 
 //生成启动日记、事件日记
 object GenStartAndEventLogApp {
-  val startupNum = 100000 // 生成的启动日志的记录数
-  val eventNum = 200000 // 生成的事件日志的记录数
+  val startupNum = 10000 // 生成的启动日志的记录数
+  //val eventNum = 200000 // 生成的事件日志的记录数
 
   // 操作系统的分布
   val osOpts = RandomOptions(("ios", 3), ("android", 7))
@@ -114,7 +114,8 @@ object GenStartAndEventLogApp {
 
   // 开始生成日志
   def generateLog(): Unit = {
-    val url = "http://192.168.213.101/log"
+    //val url = "http://192.168.213.101/log"
+    val url = "http://127.0.0.1:8080/log"
     (0 to startupNum).foreach(_ => {
       // 生成一条启动日志
       val oneStartupLog: String = initOneStartupLog()
