@@ -66,6 +66,7 @@
             <version>0.11.0.0</version>
         </dependency>
 
+        <!-- jest依赖start -->
         <dependency>
             <groupId>io.searchbox</groupId>
             <artifactId>jest</artifactId>
@@ -77,6 +78,7 @@
             <artifactId>jna</artifactId>
             <version>4.5.2</version>
         </dependency>
+        <!-- jest依赖start -->
 
     </dependencies>
 </project>

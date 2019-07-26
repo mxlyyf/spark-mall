@@ -6,7 +6,7 @@ import java.util.Date
 
 import com.alibaba.fastjson.JSON
 import com.mxl.sparkmall.common.bean.StartupLog
-import com.mxl.sparkmall.common.util.{MyKafkaUtil, RedisUtil}
+import com.mxl.sparkmall.common.util.{ESUtil, MyKafkaUtil, RedisUtil}
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.streaming.dstream.{DStream, InputDStream}
@@ -33,15 +33,15 @@ object DailyActiveUserApp {
         JSON.parseObject(record.value, classOf[StartupLog])
     }
 
-    //Kafka数据过滤去重
-    val dateUidDstream: DStream[(String, String)] = startupLogDStream.map {
+    //Kafka数据过滤: 去重
+    val dateUidDstream: DStream[StartupLog] = startupLogDStream.map {
       case log: StartupLog => ((log.logDate, log.uid), log)
-    }.groupByKey().map {
-      case ((date, uid), it) => (date, uid)
+    }.groupByKey().flatMap {
+      case (_, it) => it.toList.sortBy(_.ts).take(1)
     }
 
     // ->redis去重
-    val resultDstream: DStream[(String, String)] = dateUidDstream.transform(rdd => {
+    val resultDstream: DStream[StartupLog] = dateUidDstream.transform(rdd => {
       val currentDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date)
       val jedis = RedisUtil.getJedis
       val uidSet: util.Set[String] = jedis.smembers("DAU:" + currentDate)
@@ -49,8 +49,8 @@ object DailyActiveUserApp {
       //uids需要广播到executor节点
       val uidsBC: Broadcast[util.Set[String]] = sc.broadcast(uidSet)
       rdd.filter({
-        case (date, uid) => {
-          !uidsBC.value.contains(uid)
+        case startupLog: StartupLog => {
+          !uidsBC.value.contains(startupLog.uid)
         }
       })
     })
@@ -59,14 +59,19 @@ object DailyActiveUserApp {
     //保存到redis
     resultDstream.foreachRDD(rdd => {
       rdd.foreachPartition {
-        case it =>
+        case it => {
           val jedis = RedisUtil.getJedis
-          it.toList.map {
-            case (date, uid) => {
-              jedis.sadd("DAU:" + date, uid)
+          val list = it.toList//防止iterator循环后数据为空
+          list.map {
+            case log: StartupLog => {
+              jedis.sadd("DAU:" + log.logDate, log.uid)
             }
           }
           jedis.close()
+          //保存到ES
+          ESUtil.insertBulk("sparkmall_dau", list)
+        }
+        //case _ =>
       }
     })
 

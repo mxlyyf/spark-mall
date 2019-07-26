@@ -10,3 +10,12 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  elasticsearch:
+    jest:
+      uris: http://192.168.213.101:9200,http://192.168.213.102:9200,http://192.168.213.103:9200
+#  data:
+#    elasticsearch:
+#      cluster-name: elasticsearch-cluster
+#      cluster-nodes: 192.168.213.101:9300
+#      repositories:
+#        enabled: true

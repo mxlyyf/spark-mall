@@ -16,4 +16,13 @@ case class StartupLog(mid: String,
   val logDate: String = new SimpleDateFormat("yyyy-MM-dd").format(date)
   val logHour: String = new SimpleDateFormat("HH").format(date)
   val logHourMinute: String = new SimpleDateFormat("HH:mm").format(date)
+
+  override def hashCode(): Int = uid.hashCode
+
+  override def equals(obj: scala.Any): Boolean = {
+    obj match {
+      case o: StartupLog => o.uid == uid
+      case _ => false
+    }
+  }
 }
