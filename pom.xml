@@ -13,6 +13,7 @@
         <module>mall-offline</module>
         <module>mall-realtime</module>
         <module>mall-api</module>
+        <module>mall-canal</module>
     </modules>
 
     <parent>
