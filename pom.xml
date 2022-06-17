@@ -27,7 +27,7 @@
         <jedis.version>2.9.0</jedis.version>
         <spark.version>2.1.1</spark.version>
         <json4s.version>3.2.11</json4s.version>
-        <fastjson.version>1.2.47</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
     </properties>
 
     <dependencies>
